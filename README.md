@@ -44,7 +44,7 @@ You are now ready to configure your blog and to write your first article.
 
 ## Sample blog
 
-Now we are ready to create content:
+Let's setup a sample blog:
 
 1. Goto `themes\berlin\exampleSite` and copy all files to `c:\myblog\`.
 
@@ -56,7 +56,7 @@ Now we are ready to create content:
 
 4. Voilà!
 
-You can now study the example:
+You can now study this example:
 
 1. Sample configuration is inside `c:\myblog\config.tom`.
 
