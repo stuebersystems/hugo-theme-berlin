@@ -8,11 +8,11 @@ Berlin is a simple Bootsrap 4 based Hugo theme for a blog website. It uses pure 
 
 The sample blog with Berlin theme and **without** any custom CSS.
 
-[Screenshot - Default](https://raw.githubusercontent.com/stuebersystems/hugo-theme-berlin/master/screenshots/default.png)
+![Screenshot - Default](https://raw.githubusercontent.com/stuebersystems/hugo-theme-berlin/master/screenshots/default.png)
 
 The sample blog with Berlin theme but **with** additional custom CSS.
 
-[Screenshot - Custom](https://raw.githubusercontent.com/stuebersystems/hugo-theme-berlin/master/screenshots/custom.png)
+![Screenshot - Custom](https://raw.githubusercontent.com/stuebersystems/hugo-theme-berlin/master/screenshots/custom.png)
 
 ## Installation (under Windows)
 
