@@ -1,4 +1,4 @@
-{{ $dateFormat := default "Jan 2, 2006" (index .Site.Params "dateFormat") }}
+{{ $dateFormat := .Site.Params.dateFormat | default "Jan 2, 2006" }}
 {{ $author := .Params.author | default .Site.Params.author }}
 
 {{ if not .Date.IsZero }}
