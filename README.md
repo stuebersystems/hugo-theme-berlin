@@ -66,9 +66,32 @@ You can now study this example:
 
 4. And the sample blog posts are found under `c:\myblog\content`.
 
-## Configuration
+## Berlin theme specific configuration
 
-...
+Site related configuration:
+
+Variable                           | Type   | Description
+---------------------------------- | ------ | ---------
+Site.Params.Author                 | string | Default author
+Site.Params.Description            | string | Default description
+Site.Params.DateFormat             | string | Date format
+Site.Params.Truncate               | bool   | Show blog post summaries in home page
+Site.Params.MainSections           | array  | Which sections hosts blog posts
+Site.Params.Areas.ShowRelated      | bool   | Show related posts for current blog post
+Site.Params.Areas.ShowShareButtons | bool   | Show social share buttons for current blog posts
+Site.Params.Areas.ShowComments     | bool   | Enbale comments for current blog posts
+Site.Params.Sidebar.ShowRecent     | bool   | Show section "Recent" in sidebar
+Site.Params.Sidebar.ShowTaxonomy   | bool   | Show sections "Tags" and "Categories" in sidebar
+Site.Params.Sidebar.MaxRecentCount | int    | Max count of recent links in sidebar
+
+Page related configuration:
+
+Variable          | Type  | Description
+------------------| ----- | -----------
+Params.Share      | bool  | Show social buttons for the current page 
+Params.NoComments | bool  | Disable comments for the current page
+
+For build in variables of Hugo see [Variables and Params](https://gohugo.io/variables).
 
 ## More resources
 
