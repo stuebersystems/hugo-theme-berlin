@@ -58,9 +58,9 @@ Let's set up a sample blog:
 
 You can now study this example:
 
-1. Sample configuration is inside `c:\myblog\config.tom`.
+1. Sample configuration is inside `c:\myblog\config.toml`.
 
-2. Sample custom CSS is found under `c:\myblog\static`
+2. Sample custom css is found under `c:\myblog\static`
 
 3. Sample custom layout overwrites are found under `c:\myblog\layouts`
 
