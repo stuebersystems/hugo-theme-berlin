@@ -62,6 +62,6 @@ You can now study the example:
 
 ## More resources
 
-[Hugo Documentation](https://gohugo.io/documentation)
-[Hugo Themes](https://themes.gohugo.io)
-[Hugo on GitHub](https://github.com/gohugoio/hugo)
+* [Hugo Documentation](https://gohugo.io/documentation)
+* [Hugo Themes](https://themes.gohugo.io)
+* [Hugo on GitHub](https://github.com/gohugoio/hugo)
