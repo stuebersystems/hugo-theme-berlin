@@ -1,0 +1,17 @@
+name = "Berlin"
+license = "MIT"
+licenselink = "https://github.com/stuebersystems/hugo-theme-berlin/blob/master/LICENSE.md"
+description = "A simple Hugo theme using pure Bootstrap 4 and Material Design Icons without any custom CSS"
+homepage = "https://github.com/stuebersystems/hugo-theme-berlin"
+tags = ["blog", "bootstrap"]
+features = ["bootstrap", "blog", "responsive", "i18n", "social buttons", "Google Analytics", "Disqus"]
+min_version = 0.48
+
+[author]
+  name = "STÜBER SYSTEMS"
+  homepage = "https://github.com/stuebersystems"
+
+[original]
+  author =  "Mihail Cristian Dumitru"
+  homepage = "https://github.com/Xzya/hugo-bootstrap"
+  repo = "https://github.com/Xzya/hugo-bootstrap"

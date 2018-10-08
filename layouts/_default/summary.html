@@ -1,0 +1,23 @@
+<article class="blog-post-summary">
+    <header>
+        <h2 class="blog-post-title">
+            <a href="{{ .RelPermalink }}">{{ .Title | markdownify }}</a>
+        </h2>
+        <div class="blog-post-meta">
+			{{ partial "post-date" . }}
+			{{ partial "post-tags" . }}
+			{{ partial "post-categories" . }}
+        </div>
+    </header>
+	<div class="blog-post-body py-4">
+		{{ if .Truncated }}
+		{{ .Summary }}
+		{{ end }}
+		{{ if .Truncated }}
+		<p>
+			<a href="{{ .RelPermalink }}"><span class="mdi mdi-arrow-right"> {{ i18n "readMore" }}</span></a>
+		</p>	
+		{{ end }}
+	</div>
+</article>
+

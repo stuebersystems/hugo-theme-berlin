@@ -1,0 +1,56 @@
+- id: toggleNavigation
+  translation: "Navigation umschalten"
+  
+- id: first
+  translation: "Erste"
+
+- id: prev
+  translation: "Vorherige"
+  
+- id: next
+  translation: "Nächste"
+  
+- id: last
+  translation: "Letzte"
+
+- id: by
+  translation: "von"
+
+- id: tags
+  translation: "Schlagwörter"
+
+- id: categories
+  translation: "Kategorien"
+
+- id: readMore
+  translation: "Mehr lesen"
+
+- id: related
+  translation: "Das könnte dich auch interessieren:"
+
+- id: recentPosts
+  translation: "Neueste Artikel"
+  
+- id: shareWithYourFriends
+  translation: "Teile diesen Artikel mit deinen Freunden"
+  
+- id: shareOnTwitter
+  translation: "Auf Twitter teilen"
+
+- id: shareOnFacebook
+  translation: "Auf Facebook teilen"
+
+- id: shareOnGooglePlus
+  translation: "Auf Google+ teilen"
+
+- id: shareOnLinkedIn
+  translation: "Auf LinkedIn teilen"
+  
+- id: shareOnEmail
+  translation: "Per E-Mail teilen"
+
+- id: checkout
+  translation: "Schau Dir folgenden Artikel an: "
+  
+- id: rssFeed
+  translation: "RSS-Feed"

@@ -1,0 +1,5 @@
+{{ if (not (eq .Site.DisqusShortname "")) | and (.Site.Params.Areas.showComments) | and (not .Params.NoComments) }}
+<section class="blog-comments">
+	{{ template "_internal/disqus.html" . }}
+</section>
+{{ end }}

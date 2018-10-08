@@ -1,0 +1,45 @@
+{{ if default false .Site.Params.Areas.showShareButtons }}
+	{{ if default true .Params.Share }}
+		{{ $title := .Title }}
+		{{ $url := printf "%s" .Permalink | absLangURL }}
+		{{ $body := print .Site.Title ": " $title "\n\n" .Params.description "\n\n" $url "\n" }}
+		<section class="blog-share mt-4">
+			<div class="blog-share-info text-center">
+				<span class=""><small>{{ i18n "shareWithYourFriends" }}</small></span>
+			</div>	
+			<div class="navbar navbar-expand-lg navbar-light blog-share-buttons justify-content-center">
+				<ul class="navbar-nav">
+					<li class="nav-item">
+						{{ if .Site.Params.Social.TwitterName }} 
+						<a class="nav-link" href="https://twitter.com/share?url={{ $url }}&amp;text={{ $title }}&amp;via={{ .Site.Params.Social.TwitterName }}" target="_blank" title="{{ i18n "shareOnTwitter" }}">
+						{{ else }} 
+						<a class="nav-link" href="https://twitter.com/share?url={{ $url }}&amp;text={{ $title }}" target="_blank" title="{{ i18n "shareOnTwitter" }}">
+						{{ end }} 
+							<span class="mdi mdi-24px mdi-twitter"></span>
+						</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="https://www.facebook.com/sharer.php?u={{ $url }}" target="_blank" title="{{ i18n "shareOnFacebook" }}">
+							<span class="mdi mdi-24px mdi-facebook"></span>
+						</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="https://plus.google.com/share?url={{ $url }}" target="_blank" title="{{ i18n "shareOnGooglePlus" }}">
+							<span class="mdi mdi-24px mdi-google-plus"></span>
+						</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="https://www.linkedin.com/shareArticle?mini=true&amp;url={{ $url }}" target="_blank" title="{{ i18n "shareOnLinkedIn" }}">
+							<span class="mdi mdi-24px mdi-linkedin"></span>
+						</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="mailto:?subject={{ i18n "checkout" }}{{ $title }}.&body={{ $body }}" target="_blank" title="{{ i18n "shareOnEmail" }}">
+							<span class="mdi mdi-24px mdi-email"></span>
+						</a>
+					</li>
+				</ul>
+			</div>	
+		</section>
+	{{ end }}
+{{ end }}

@@ -1,0 +1,15 @@
+<article class="blog-post">
+    <header>
+        <h2 class="blog-post-title">
+            <a href="{{ .RelPermalink }}">{{ .Title | markdownify }}</a>
+        </h2>
+        <div class="blog-post-meta">
+			{{ partial "post-date" . }}
+			{{ partial "post-tags" . }}
+			{{ partial "post-categories" . }}
+        </div>
+    </header>
+	<section class="blog-post-body py-4">
+		{{ .Content }}
+	</section>
+</article>

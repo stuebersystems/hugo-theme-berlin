@@ -1,0 +1,23 @@
+{{ $Xzya := "<a href=\"https://github.com/Xzya\">Xzya</a>" }}
+{{ $HugoThemeBootstrap4Blog := "<a href=\"https://github.com/alanorth/hugo-theme-bootstrap4-blog\">hugo-theme-bootstrap4-blog</a>" }}
+{{ $links := (dict "Xzya" $Xzya "HugoThemeBootstrap4Blog" $HugoThemeBootstrap4Blog ) }}
+{{ $thanks := i18n "thanks" $links | safeHTML }}
+
+{{ $copyright := default $thanks .Site.Copyright }}
+
+<footer class="my-4 pt-4 border-top">
+    <div class="container">
+		<div class="row">
+			<div class="col-6 col-md">
+				<ul class="list-inline">
+					{{ range .Site.Menus.footer }}	
+					<li class="list-inline-item"><a class="text-muted" href="{{ .URL }}">{{ .Name }}</a></li>
+					{{ end }}							
+				</ul>
+			</div>
+			<div class="col-6 col-md text-right">
+				<small class="text-muted">{{ .Site.Copyright }}</small>
+			</div>
+		</div>
+	</div>
+</footer>

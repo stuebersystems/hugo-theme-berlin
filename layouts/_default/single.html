@@ -1,0 +1,18 @@
+{{ define "main" }}
+<article class="blog-post">
+	<header>
+		<h1 class="blog-post-title">
+			{{ .Title | markdownify }}	
+		</h1>
+		{{ partial "post-date" . }}
+		{{ partial "post-tags" . }}
+		{{ partial "post-categories" . }}
+	</header>
+	<section class="blog-post-content py-4">
+		{{ .Content }}
+		{{ partial "related" . }}
+		{{ partial "share" . }}
+		{{ partial "comments" . }}
+	</section>
+</article>
+{{ end }}

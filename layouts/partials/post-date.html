@@ -1,0 +1,14 @@
+{{ $dateFormat := default "Jan 2, 2006" (index .Site.Params "dateFormat") }}
+{{ $author := .Params.author | default .Site.Params.author }}
+
+{{ if not .Date.IsZero }}
+<div class="blog-post-date text-secondary">
+	<a href="{{ .RelPermalink }}"><span class="mdi mdi-link"></span></a>
+	{{ if not .Date.IsZero }}
+		{{ .Date.Format $dateFormat }}
+	{{ end }}
+	{{ if $author }}
+		{{ i18n "by" }} <span rel="author">{{ $author }}</span>
+	{{ end }}
+</div>
+{{ end }}

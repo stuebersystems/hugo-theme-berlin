@@ -1,0 +1,12 @@
+<section id="blog-taxonomies">
+    {{ range $taxonomyname, $taxonomy := .Site.Taxonomies }}
+        {{ if gt (len $taxonomy) 0 }}
+        <div class="blog-taxonomy-title">{{ i18n $taxonomyname }}</div>
+        <p class="blog-taxonomy-badges">
+            {{ range $name, $value := $taxonomy }}
+            <a class="badge badge-secondary" href="{{ printf "/%s/" $taxonomyname | relLangURL }}{{ $name | urlize }}">{{ $name }}</a>
+            {{ end }}
+        </p>
+        {{ end }}
+    {{ end }}
+</section>

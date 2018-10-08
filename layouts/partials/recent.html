@@ -1,0 +1,16 @@
+{{ if .Site.Params.Sidebar.showRecent }}
+{{ $topRecentCount := default 5 .Site.Params.sidebar.maxRecentCount }}
+{{ $posts := first $topRecentCount (where .Site.RegularPages "Section" "in" .Site.Params.mainSections) }}
+{{ if gt (len $posts) 0 }}
+<section id="blog-recent">
+    <div class="blog-recent-title">{{ i18n "recentPosts" }}</div>
+    <ol class="blog-recent-list list-unstyled">
+        {{ range $posts }}
+        <li>
+            <span class="mdi mdi-chevron-right"></span> <a href="{{ .RelPermalink }}">{{ .Title | markdownify }}</a>
+        </li>
+        {{ end }}
+    </ol>
+</section>
+{{ end }}
+{{ end }}

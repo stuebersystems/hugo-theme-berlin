@@ -1,0 +1,28 @@
+body {
+	font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	padding-top: 4.5rem;
+}
+h1, h2, h3, h4, h5 {
+	padding-top: 0.5rem;
+	padding-bottom: 0.5rem;
+}
+.blog-post-date {
+	margin-bottom: 0.5rem;
+}
+.blog-post-related {
+	margin-top: 2rem;
+}
+.blog-pagination {
+	margin-bottom: 2rem;
+}
+.blog-post-related-title, 
+.blog-recent-title, 
+.blog-taxonomy-title {
+	padding-top: 0.5rem;
+	padding-bottom: 0.5rem;
+}
+.badge.badge-secondary {
+	color: rgba(108, 117, 125, 0.8);
+    border-style: solid;
+	background: none;
+}

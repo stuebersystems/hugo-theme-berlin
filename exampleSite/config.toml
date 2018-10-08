@@ -1,0 +1,56 @@
+baseurl = "http://example.com"
+title = "MyBlog"
+copyright = "A sample blog by me"
+languageCode = "en"
+defaultContentLanguage = "en"
+paginate = 3
+paginatePath = "page"
+theme = "berlin"
+
+[taxonomies]
+tag = "tags"
+category = "categories"
+
+[menu]
+
+  [[menu.main]]
+  url = "/"
+  name = "Home"
+  weight = 1
+
+  [[menu.main]]
+  url = "/about/"
+  name = "About"
+  weight = 2
+
+  [[menu.footer]]
+  url = "/imprint/"
+  name = "Imprint"
+  weight = 1
+
+  [[menu.footer]]
+  url = "/privacy/"
+  name = "Privacy"
+  weight = 2
+
+[permalinks]
+post = "/:year/:month/:title/"
+
+[params]
+author = "Me"
+description = "MyBlog"
+dateFormat = "Jan 2, 2006"
+truncate = true
+mainSections = [
+  "posts"
+]
+
+  [params.areas]
+  showRelated = true
+  showShareButtons = true
+  showComments = false
+
+  [params.sidebar]
+  showRecent = true
+  showTaxonomy = true
+  maxRecentCount = 5

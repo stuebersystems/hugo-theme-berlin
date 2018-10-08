@@ -1,0 +1,23 @@
+<div class="container pt-md-2 pb-md-2">
+	<a class="navbar-brand" href="{{ .Site.BaseURL }}">
+		{{ partial "header.navbar.brand" . }}
+	</a>
+	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ i18n "toggleNavigation" }}">
+		<span class="navbar-toggler-icon"></span>
+	</button>
+	<div class="collapse navbar-collapse" id="navbarSupportedContent">
+		<ul class="navbar-nav ml-auto">
+			{{ $url := .URL }}
+			{{ range .Site.Menus.main }}
+			<li class="nav-item {{ if eq $url .URL }}active{{ end }}">
+				<a class="nav-link" href="{{ .URL }}">{{ .Name }}</a>
+			</li>
+			{{ end }}				
+			{{ if .Site.RSSLink }}
+			<li class="nav-item">
+				<a class="nav-link" href="{{ .Site.RSSLink }}" title="{{ i18n "rssFeed" }}"><span class="mdi mdi-rss-box"></span></a>
+			</li>
+			{{ end }}
+		</ul>
+	</div>
+</div>
