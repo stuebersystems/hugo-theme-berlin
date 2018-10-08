@@ -1,6 +1,6 @@
-# Berlin
+# Berlin - A Hugo theme
 
-Berlin is a simple Bootstrap 4 based [Hugo](https://gohugo.io) theme for a blog website. It uses pure [Bootstrap 4](https://getbootstrap.com) without any custom CSS and [Material Design Icons](https://materialdesignicons.com) Web Font for icons. The idea is to give you a framework for easy additional customization (e.g. CSS, custom fonts or Bootstrap theme). This theme includes a sample blog for demonstration.
+Berlin is a simple Bootstrap 4 based [Hugo](https://gohugo.io) theme for a blog website. It uses pure [Bootstrap 4](https://getbootstrap.com) without any custom CSS and [Material Design Icons](https://materialdesignicons.com) Web Font for icons. The idea is to give you a framework for easy additional customization (e.g. CSS, custom fonts or own Bootstrap theme). This theme includes a sample blog for demonstration.
 
 <small>This theme is based on [Hugo Bootstrap v4 Theme](https://github.com/Xzya/hugo-bootstrap)</small>
 
@@ -60,7 +60,7 @@ You can now study this example:
 
 1. Sample configuration is inside `c:\myblog\config.toml`.
 
-2. Sample custom css is found under `c:\myblog\static`
+2. Sample custom CSS is found under `c:\myblog\static`
 
 3. Sample custom layout overwrites are found under `c:\myblog\layouts`
 
