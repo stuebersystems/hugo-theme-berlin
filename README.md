@@ -4,6 +4,16 @@ Berlin is a simple Bootsrap 4 based Hugo theme for a blog website. It uses pure 
 
 <small>This theme is based on [Hugo Bootstrap v4 Theme](https://github.com/Xzya/hugo-bootstrap)</small>
 
+## Screenshots
+
+The sample blog with Berlin theme and **without** any custom CSS.
+
+[Screenshot - Default](https://raw.githubusercontent.com/stuebersystems/hugo-theme-berlin/master/screenshots/default.png)
+
+The sample blog with Berlin theme but **with** additional custom CSS.
+
+[Screenshot - Custom](https://raw.githubusercontent.com/stuebersystems/hugo-theme-berlin/master/screenshots/custom.png)
+
 ## Installation (under Windows)
 
 Asumed you have installed hugo already you should:	
