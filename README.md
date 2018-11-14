@@ -8,19 +8,19 @@ Berlin is a simple Bootstrap 4 based [Hugo](https://gohugo.io) theme for a blog 
 
 The sample blog with Berlin theme but **without** any custom CSS.
 
-![Screenshot - Default](https://raw.githubusercontent.com/stuebersystems/hugo-theme-berlin/master/screenshots/default.jpg)
+![Screenshot - Default](https://raw.githubusercontent.com/stuebersystems/hugo-theme-berlin/master/images/screenshot.png)
 
 The sample blog with Berlin theme and **with** additional custom CSS.
 
-![Screenshot - Custom](https://raw.githubusercontent.com/stuebersystems/hugo-theme-berlin/master/screenshots/custom.jpg)
+![Screenshot - Custom](https://raw.githubusercontent.com/stuebersystems/hugo-theme-berlin/master/images/screenshot-custom.png)
 
 ## Installation (under Windows)
 
-Assuming you have already installed hugo you should:	
+Assuming you have already installed Hugo you should:	
 
 1. Open the Windows command prompt
 
-2. Run `hugo new site c:\myblog`. A new hugo project will be created.
+2. Run `hugo new site c:\myblog`. A new Hugo project will be created.
 
 3. Switch to that newly created folder with `cd c:\myblog`.
 
@@ -54,7 +54,7 @@ Let's set up a sample blog:
 
 3. Open your web browser and navigate to `http://localhost:1313`.
 
-4. Voilà!
+4. Et voilà!
 
 You can now study this example:
 
