@@ -76,10 +76,10 @@ Site.Params.Author                 | string | Default author
 Site.Params.Description            | string | Default description
 Site.Params.DateFormat             | string | Date format
 Site.Params.Truncate               | bool   | Show blog post summaries in home page
-Site.Params.MainSections           | array  | Which sections hosts blog posts
+Site.Params.MainSections           | array  | In which sections blog posts are located?
 Site.Params.Areas.ShowRelated      | bool   | Show related posts for current blog post
 Site.Params.Areas.ShowShareButtons | bool   | Show social share buttons for current blog posts
-Site.Params.Areas.ShowComments     | bool   | Enbale comments for current blog posts
+Site.Params.Areas.ShowComments     | bool   | Enable comments for current blog posts
 Site.Params.Sidebar.ShowRecent     | bool   | Show section "Recent" in sidebar
 Site.Params.Sidebar.ShowTaxonomy   | bool   | Show sections "Tags" and "Categories" in sidebar
 Site.Params.Sidebar.MaxRecentCount | int    | Max count of recent links in sidebar
