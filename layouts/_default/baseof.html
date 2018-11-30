@@ -7,7 +7,6 @@
 	<meta name="author" content="{{ .Params.Author | default .Site.Params.Author }}" />
 	<meta name="description" content="{{ .Description | default .Site.Params.Description }}" />
 
-	{{ partial "schema.html" . }}
 	{{ partial "opengraph.html" . }}
 	{{ partial "twitter-cards.html" . }}
 
@@ -25,6 +24,7 @@
     <link href="{{ .Site.RSSLink }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" />
     {{ end }}
 
+	{{ partial "schema.html" . }}
 	{{ partial "google-analytics.html" . }}
 	{{ partial "cookie-consent.html" . }}
 
