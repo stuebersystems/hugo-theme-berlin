@@ -74,6 +74,8 @@ Variable                           | Type   | Description
 ---------------------------------- | ------ | ---------
 Site.Params.Author                 | string | Default author
 Site.Params.Description            | string | Default description
+Site.Params.Publisher              | string | Publisher info (for schema.org support)
+Site.Params.PublisherLogo          | string | Publisher logo (for schema.org support)
 Site.Params.DateFormat             | string | Date format
 Site.Params.Truncate               | bool   | Show blog post summaries in home page
 Site.Params.MainSections           | array  | In which sections blog posts are located?
@@ -90,6 +92,7 @@ Variable          | Type  | Description
 ------------------| ----- | -----------
 Params.Share      | bool  | Show social buttons for the current page 
 Params.NoComments | bool  | Disable comments for the current page
+Params.NoAuthor   | bool  | Do not show author for the current page
 
 For build in variables of Hugo see [Variables and Params](https://gohugo.io/variables).
 
