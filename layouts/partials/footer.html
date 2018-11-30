@@ -1,14 +1,14 @@
 <footer class="my-4 pt-4 border-top">
     <div class="container">
 		<div class="row">
-			<div class="col-6 col-md">
+			<div class="col-sm text-sm-left text-center">
 				<ul class="list-inline">
 					{{ range .Site.Menus.footer }}	
 					<li class="list-inline-item"><a class="text-muted" href="{{ .URL }}">{{ .Name }}</a></li>
 					{{ end }}							
 				</ul>
 			</div>
-			<div class="col-6 col-md text-right">
+			<div class="col-sm text-sm-right text-center">
 				<small class="text-muted">{{ .Site.Copyright }}</small>
 			</div>
 		</div>
