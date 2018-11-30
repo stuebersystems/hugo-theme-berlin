@@ -3,7 +3,7 @@
 		{{ $title := .Title }}
 		{{ $url := printf "%s" .Permalink | absLangURL }}
 		{{ $body := print .Site.Title ": " $title "\n\n" .Params.description "\n\n" $url "\n" }}
-		<section class="blog-share mt-4">
+		<div class="blog-share mt-4">
 			<div class="blog-share-info text-center">
 				<span class=""><small>{{ i18n "shareWithYourFriends" }}</small></span>
 			</div>	
@@ -40,6 +40,6 @@
 					</li>
 				</ul>
 			</div>	
-		</section>
+		</div>
 	{{ end }}
 {{ end }}

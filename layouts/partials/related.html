@@ -1,7 +1,7 @@
 {{ if .Site.Params.Areas.showRelated }}
 {{ $related := .Site.RegularPages.Related . | first 5 }}
 {{ with $related }}
-<section id="blog-post-related">
+<div id="blog-post-related">
 	<div class="blog-post-related-title">{{ i18n "related" }}</div>
 	<ol class="blog-post-related-list list-unstyled">
 		{{ range . }}
@@ -10,6 +10,6 @@
 		</li>
 		{{ end }}
 	</ol>
-</section>
+</div>
 {{ end }}
 {{ end }}
