@@ -19,7 +19,7 @@
 	{{ if not .PublishDate.IsZero }}"datePublished": "{{ .PublishDate.Format $ISO8601 | safeHTML }}",{{ end }}
 	{{ if not .Lastmod.IsZero }}"dateModified": "{{ .Lastmod.Format $ISO8601 | safeHTML }}",{{ end }}
 	"description": "{{ with .Description }}{{ . }}{{ else }}{{if .IsPage}}{{ .Summary }}{{ else }}{{ with .Site.Params.description }}{{ . }}{{ end }}{{ end }}{{ end }}",
-	{{ if not .Site.Params.Publisher }}
+	{{ if .Site.Params.Publisher }}
 	"publisher": {
 		"@type": "Organization",
 		"name": "{{ .Site.Params.Publisher }}",
@@ -32,6 +32,6 @@
 	"author": {
 		"@type": "Person",
 		"name": "{{ .Params.Author | default .Site.Params.Author }}"
-	}
- }
+	}	
+}
 </script>
