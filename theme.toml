@@ -5,7 +5,7 @@ description = "A simple Hugo theme using pure Bootstrap 4 and Material Design Ic
 homepage = "https://github.com/stuebersystems/hugo-theme-berlin"
 tags = ["blog", "bootstrap"]
 features = ["bootstrap", "blog", "responsive", "i18n", "social buttons", "Google Analytics", "Disqus"]
-min_version = 0.48
+min_version = 0.60
 
 [author]
   name = "STÜBER SYSTEMS"
