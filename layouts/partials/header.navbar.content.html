@@ -2,11 +2,11 @@
 	<a class="navbar-brand" href="{{ .Site.BaseURL }}">
 		{{ partial "header.navbar.brand" . }}
 	</a>
-	<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ i18n "toggleNavigation" }}">
+	<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ i18n "toggleNavigation" }}">
 		<span class="navbar-toggler-icon"></span>
 	</button>
-	<div class="collapse navbar-collapse" id="navbarSupportedContent">
-		<ul class="navbar-nav ml-auto">
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+		<ul class="navbar-nav ms-auto">
 			{{ $url := .Permalink  }}
 			{{ range .Site.Menus.main }}
 			<li class="nav-item {{ if eq $url .URL }}active{{ end }}">
@@ -15,7 +15,7 @@
 			{{ end }}				
 			{{ if .Site.RSSLink }}
 			<li class="nav-item">
-				<a class="nav-link" href="{{ .Site.RSSLink }}" title="{{ i18n "rssFeed" }}"><span class="mdi mdi-rss-box"></span></a>
+				<a class="nav-link" href="{{ .Site.RSSLink }}" title="{{ i18n "rssFeed" }}"><span class="bi-rss-fill"></span></a>
 			</li>
 			{{ end }}
 		</ul>

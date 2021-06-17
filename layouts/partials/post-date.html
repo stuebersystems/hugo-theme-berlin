@@ -3,7 +3,7 @@
 
 {{ if not .Date.IsZero }}
 <div class="blog-post-date text-secondary">
-	<a href="{{ .RelPermalink }}"><span class="mdi mdi-link"></span></a>
+	<a href="{{ .RelPermalink }}"><span class="bi-link"></span></a>
 	{{ if not .Date.IsZero }}
 		{{ .Date.Format $dateFormat }}
 	{{ end }}

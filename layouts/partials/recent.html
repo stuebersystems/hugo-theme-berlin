@@ -7,7 +7,7 @@
     <ol class="blog-recent-list list-unstyled">
         {{ range $posts }}
         <li>
-            <span class="mdi mdi-chevron-right"></span> <a href="{{ .RelPermalink }}">{{ .Title | markdownify }}</a>
+            <span class="bi-chevron-right"></span> <a href="{{ .RelPermalink }}">{{ .Title | markdownify }}</a>
         </li>
         {{ end }}
     </ol>

@@ -1,9 +1,8 @@
 {{ define "main" }}
 
 {{ $truncate := default true .Site.Params.truncate }}
-{{ $paginator := .Paginate (where .Site.RegularPages "Section" "in" .Site.Params.mainSections) }}
 
-{{ range $paginator.Pages }}
+{{ range .Paginator.Pages }}
 
     {{ if $truncate }}
         {{ .Render "summary" }}
