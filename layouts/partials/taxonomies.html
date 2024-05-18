@@ -4,7 +4,7 @@
         <div class="blog-taxonomy-title">{{ i18n $taxonomyname }}</div>
         <p class="blog-taxonomy-badges">
             {{ range $name, $value := $taxonomy }}
-            <a class="badge badge-secondary" href="{{ printf "/%s/" $taxonomyname | relLangURL }}{{ $name | urlize }}">{{ $name }}</a>
+            <a class="badge badge-secondary" href="{{ "tags/" | relLangURL }}{{ $name | urlize }}">{{ $name }}</a>
             {{ end }}
         </p>
         {{ end }}

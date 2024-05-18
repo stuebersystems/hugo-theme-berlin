@@ -20,8 +20,10 @@
 	{{ partial "css.bootstrap.html" . }}
 	{{ partial "css.custom.html" . }}
 
-    {{ if .Site.RSSLink }}
-    <link href="{{ .Site.RSSLink }}" rel="alternate" type="application/rss+xml" title="{{ .Site.Title }}" />
+    {{ if .OutputFormats.Get "RSS" }}
+		{{ with .OutputFormats.Get "rss" -}}
+			{{ printf `<link rel=%q type=%q href=%q title=%q>` .Rel .MediaType.Type .Permalink site.Title | safeHTML }}
+		{{ end }}
     {{ end }}
 
 	{{ partial "schema.html" . }}

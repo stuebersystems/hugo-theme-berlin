@@ -13,9 +13,12 @@
 				<a class="nav-link" href="{{ .URL }}">{{ .Name }}</a>
 			</li>
 			{{ end }}				
-			{{ if .Site.RSSLink }}
+			{{ if .OutputFormats.Get "RSS" }}
 			<li class="nav-item">
-				<a class="nav-link" href="{{ .Site.RSSLink }}" title="{{ i18n "rssFeed" }}"><span class="bi-rss-fill"></span></a>
+				{{ with .OutputFormats.Get "rss" -}}
+					{{ printf `<a class="nav-link" href=%q title=%q>` .Permalink site.Title | safeHTML }}
+				{{ end }}
+				<span class="bi-rss-fill"></span></a>
 			</li>
 			{{ end }}
 		</ul>
