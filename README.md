@@ -94,7 +94,7 @@ Params.Share      | bool  | Show social buttons for the current page
 Params.NoComments | bool  | Disable comments for the current page
 Params.NoAuthor   | bool  | Do not show author for the current page
 
-For build in variables of Hugo see [Variables and Params](https://gohugo.io/variables).
+For build in variables of Hugo see [Methods within your templates](https://gohugo.io/methods/).
 
 ## More resources
 
