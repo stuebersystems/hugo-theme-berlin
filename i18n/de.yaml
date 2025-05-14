@@ -35,13 +35,13 @@
   translation: "Teile diesen Artikel"
   
 - id: shareOnTwitter
-  translation: "Auf Twitter teilen"
+  translation: "Auf X/Twitter teilen"
 
 - id: shareOnFacebook
   translation: "Auf Facebook teilen"
 
-- id: shareOnGooglePlus
-  translation: "Auf Google+ teilen"
+- id: shareOnBluesky
+  translation: "Auf Bluesky teilen"
 
 - id: shareOnLinkedIn
   translation: "Auf LinkedIn teilen"

@@ -10,12 +10,8 @@
 			<div class="navbar navbar-expand-lg navbar-light blog-share-buttons justify-content-center">
 				<ul class="navbar-nav">
 					<li class="nav-item">
-						{{ if .Site.Social.twitter }} 
-						<a class="nav-link" href="https://twitter.com/share?url={{ $url }}&amp;text={{ $title }}&amp;via={{ .Site.Params.Social.TwitterName }}" target="_blank" title="{{ i18n "shareOnTwitter" }}">
-						{{ else }} 
-						<a class="nav-link" href="https://twitter.com/share?url={{ $url }}&amp;text={{ $title }}" target="_blank" title="{{ i18n "shareOnTwitter" }}">
-						{{ end }} 
-							<span class="bi bi-twitter"></span>
+						<a class="nav-link" href="https://bsky.app/intent/compose?text={{ $url }}" target="_blank" title="{{ i18n "shareOnBluesky" }}">
+							<span class="bi bi-bluesky"></span>
 						</a>
 					</li>
 					<li class="nav-item">
@@ -24,8 +20,17 @@
 						</a>
 					</li>
 					<li class="nav-item">
-						<a class="nav-link" href="https://www.linkedin.com/shareArticle?mini=true&amp;url={{ $url }}" target="_blank" title="{{ i18n "shareOnLinkedIn" }}">
+						<a class="nav-link" href="https://www.linkedin.com/sharing/share-offsite?url={{ $url }}" target="_blank" title="{{ i18n "shareOnLinkedIn" }}">
 							<span class="bi bi-linkedin"></span>
+						</a>
+					</li>
+					<li class="nav-item">
+						{{ if .Site.Social.twitter }} 
+						<a class="nav-link" href="https://x.com/intent/post?url={{ $url }}&amp;text={{ $title }}&amp;via={{ .Site.Params.Social.TwitterName }}" target="_blank" title="{{ i18n "shareOnTwitter" }}">
+						{{ else }} 
+						<a class="nav-link" href="https://x.com/intent/post?url={{ $url }}&amp;text={{ $title }}" target="_blank" title="{{ i18n "shareOnTwitter" }}">
+						{{ end }} 
+							<span class="bi bi-twitter-x"></span>
 						</a>
 					</li>
 					<li class="nav-item">
