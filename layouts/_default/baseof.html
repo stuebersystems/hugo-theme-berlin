@@ -8,17 +8,17 @@
 	<meta name="description" content="{{ .Description | default .Site.Params.Description }}" />
 
 	{{ partial "opengraph.html" . }}
-	{{ partial "twitter-cards.html" . }}
+	{{ partial "twitter_cards.html" . }}
 
 	<title>{{ block "title" . }}{{ .Title }}{{ if ne .Title .Site.Title }} | {{ .Site.Title }}{{ end }}{{ end }}</title>
 	
 	<link href="{{ .Permalink }}" rel="canonical">
 
 	{{ partial "favicon.html" . }}
-	{{ partial "css.fonts.html" . }}
-	{{ partial "css.icons.html" . }}
-	{{ partial "css.bootstrap.html" . }}
-	{{ partial "css.custom.html" . }}
+	{{ partial "css-fonts.html" . }}
+	{{ partial "css-icons.html" . }}
+	{{ partial "css-bootstrap.html" . }}
+	{{ partial "css-custom.html" . }}
 
     {{ if .OutputFormats.Get "RSS" }}
 		{{ with .OutputFormats.Get "rss" -}}
@@ -33,7 +33,7 @@
 </head>
 <body>
 	{{ block "header" . }}
-		{{ partial "header" . }}
+		{{ partial "header.html" . }}
     {{ end }}
     {{ block "body" . }}
     <main class="container py-4">
@@ -49,7 +49,7 @@
     {{ block "footer" . }}
 		{{ partial "footer" . }}
     {{ end }}
-	{{ partial "js.bootstrap.html" . }}
-	{{ partial "js.custom.html" . }}
+	{{ partial "js-bootstrap.html" . }}
+	{{ partial "js-custom.html" . }}
 </body>
 </html>
